@@ -1,0 +1,76 @@
+/**
+* Reset or normalise used to standardise browser display
+**/
+
+
+
+/* Redefine existing HTML styles */
+
+body{
+    font-family: sans-serif;
+    font-size: smaller;
+    color: #999999;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div img{
+    width: 100%;
+}
+a{
+    color: #999999;
+    text-decoration: none;
+}
+a:link{
+
+}
+a:visited{
+
+}
+a:active{
+
+}
+a:hover{
+    color: #ff0000;
+}
+header ul {
+    list-style:none;
+    padding-right:0;
+    padding-left:0;
+    height:24px;
+
+}
+header li{
+    width: 140px;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+header a{
+    background-color: #00ff90;
+    display: block;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+header a:hover{
+    background-color:#099999;
+
+}
+footer ul{
+    list-style:none;
+    padding-right:0;
+    padding-left:0;
+}
+
+/* Class based styles */
+
+
+
+/* ID based styles */
+
+
+
+/* Style changes for larger displays or devices */

@@ -1,7 +1,7 @@
 /**
 * Reset or normalise used to standardise browser display
 **/
-
+@import url('normalize.css');
 
 
 /* Redefine existing HTML styles */
@@ -33,14 +33,14 @@ a:active{
 a:hover{
     color: #ff0000;
 }
-header ul {
+nav ul {
     list-style:none;
     padding-right:0;
     padding-left:0;
     height:24px;
 
 }
-header li{
+nav li{
     width: 140px;
     float: left;
     text-align: center;
@@ -48,22 +48,24 @@ header li{
     margin-left: 10px;
 
 }
-header a{
+nav a{
     background-color: #00ff90;
     display: block;
     padding-top:5px;
     padding-bottom:5px;
 
 }
-header a:hover{
+nav a:hover{
     background-color:#099999;
 
+
 }
-footer ul{
-    list-style:none;
-    padding-right:0;
-    padding-left:0;
+footer li{
+    width:460px;
+
+
 }
+
 
 /* Class based styles */
 

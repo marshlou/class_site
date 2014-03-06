@@ -4,6 +4,29 @@
     <meta charset="UTF-8"/>
     <title>Welcome to Arrow Photography</title>
     <link href="assets/css/styles.css" rel="stylesheet" media="all"/>
+    <style>
+        form.table{
+            display: table;
+            width:800px;
+            margin:24px auto;
+        }
+        label.row{
+            display:table-row;
+
+        }
+        .cell{
+            display:table-cell;
+            width:75%
+
+        }
+        span.cell{
+            width:25%
+
+        }
+        input, textarea{
+            width:100%
+        }
+    </style>
 </head>
 <body>
         <header>
@@ -67,49 +90,81 @@
                     </tfoot>
                 </table>
 
-                <form method="post" action="http://webdesignstudents.co.uk/students/response.php">
-                    <table>
-                    <tr><td><label for="contactname">Name:</label></td><td> <input type="text" name="contactname" id="contactname" required /></td></tr>
-                    <tr><td><label for="contactmail">Email:</label></td><td><input type="email" name="contactemail" id="contactmail" required /></td></tr>
-                    <tr><td>Gender:</td>
-                        <td>
-                            <label>
-                            <input type="radio" name="gender" value="Male"/> Male
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" value="Female" checked /> Female
-                        </label></td>
-                    </tr>
-                    <tr><td><label for="location">location:</label></td>
-                        <td>
+
+
+
+
+
+
+                <form method="post" action="http://webdesignstudents.co.uk/students/response.php" class="table">
+
+
+
+
+
+
+
+              <label class="row">
+                  <span class="cell">*Name:</span>
+                  <input type="text" name="contactname" required class="cell" />
+                  </label>
+              <label class="row">
+                  <span class="cell">*Email:</span>
+                  <input type="text" name="contactemail"required class="cell" />
+                  </label>
+
+              <label class="row">
+                  <span class="cell">Gender:</span>
+                  <span class="row">Male:</span>
+                  <input type="radio"name="gender" value="Male" required class="row"/>
+                  </label>
+                    <label class="row">
+                        <span class="cell"></span>
+                        <span class="row">Female:</span>
+
+                        <input type="radio" name="gender" value="Female" checked required class="row" />
+                    </label>
+
+
+                    <label class="row">
+                        <span class="cell">Location:</span>
+
                         <select name="location" id="location">
                             <option value="Brighton">Brighton &amp; Hove</option>
                             <option value="Worthing" selected>Worthing</option>
                             <option value="Eastbourne">Eastbourne</option>
                         </select>
-                        </td>
-                    </tr>
-                    <tr><td><label for="comment">Comment</label></td>
+                    </label>
 
-                          <td> <textarea name="comment" id="comment" cols="18"></textarea></td>
+                    <label class="row">
+                        <span class="cell">*Comment:</span>
 
-                    </tr>
-                    <tr>
-                            <!--<td>&nbsp;</td> -->
-                            <td colspan="2"><input type="submit" name="submit" value="send comment"/></td>
-                    </tr>
-                    </table>
+                        <textarea name="comment" id="comment" cols="18" required class="cell"></textarea>
+                    </label>
+
+                        <label class="row">
+                            <span class="cell">*Required information</span>
+                            <input type="submit" name="submit"class="cell"/>
+                        </label>
+
                 </form>
+
             </div>
         <footer>
             <nav>
                 <<ul class="nav">
-                <li><a href="../general/terms.html">Terms &amp; Conditions</a></li>
-                <li><a href="../general/faq.html"><abbr title= "frequently asked questions" > FAQ</abbr></a></li>
+                <li><a href="general/terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="general/faq.html"><abbr title= "frequently asked questions" > FAQ</abbr></a></li>
             </ul>
             </nav>
         </footer>
 </body>
 </html>
+
+
+
+
+
+
 
 

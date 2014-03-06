@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8"/>
     <title></title>
+    <link href="../assets/css/styles.css" rel="stylesheet" media="all"/>
+    <style>
+        form.table{
+            display: table;
+            width:800px;
+            margin:24px auto;
+        }
+        label.row{
+            display:table-row;
+
+        }
+        .cell{
+            display:table-cell;
+            width:75%
+
+        }
+        span.cell{
+            width:25%
+
+        }
+        input, textarea{
+            width:100%
+        }
+    </style>
+
 </head>
 <body>
+<div id="page" class="container">
+<header>
 <h1>Arrow Photography</h1>
+</header>
+<nav>
 <ul>
     <li><a href="../index.html" > Home</a></li>
     <li><a href="../about.html"> About</a></li>
@@ -13,14 +43,44 @@
     <li><a href="../news.html">News</a></li>
     <li><a href="../contact.html">Contact</a></li>
 </ul>
-<ul>
-    <li><a href="terms.html">Terms &amp; Conditions</a></li>
-    <li><a href="faq.html"><abbr title= "frequently asked questions" > FAQ</abbr></a></li>
-</ul>
+</nav>
+
 <h2>FAQ</h2>
+    <form method="get" action="http://webdesignstudents.co.uk/students/response.php" class="table">
+        <label class="row">
+            <span class="cell"> *Name:</span>
+            <input type="text" name="contactemail" required class="cell" />
+            </label>
+        <label class="row">
+            <span class="cell">Email:</span>
+            <input type="text" name="contactemail" class="cell" />
+        </label>
+        <label class="row">
+
+           <span class="cell"> *Comment:</span>
+            <textarea name="comment" cols="18" rows="8" required class="cell"></textarea>
+            </label>
+        <label class="row">
+            <span class="cell">*Required information</span>
+            <input type="submit" name="submit"class="cell"/>
+            </label>
+        </form>
+
+</div>
+<footer>
+    <nav>
+        <ul class="nav">
+            <li><a href="../general/terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="../general/faq.html"><abbr title= "frequently asked questions" > FAQ</abbr></a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
+
+
+
 </html>
-</body>
-</html>
-        
+
+
+
         

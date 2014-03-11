@@ -1,99 +1,37 @@
-/**
-* Reset or normalise used to standardise browser display
-**/
-@import url('normalize.css');
-/* Mobile first */
-
-
-
-/* Redefine existing HTML styles */
-
-body{
-    font: smaller/160% sans-serif;
-    color: #999999;
-    margin: 0 auto;
-
-
+@import 'reset.css';
+body {
+  color: #000000;
+  width: 960px;
+  background-color: #ffffff;
+  margin: 0 auto;
 }
-header, footer{
-    clear: both;
+header {
+  background-image: -webkit-linear-gradient(#ffffff, #000000);
+  background-image: -moz-linear-gradient(#ffffff, #000000);
+  background-image: -ms-linear-gradient(#ffffff, #000000);
+  background-image: -o-linear-gradient(#ffffff, #000000);
+  background-image: linear-gradient(#ffffff, #000000);
 }
-
-nav ul {
-    list-style:none;
-    padding-right:0;
-    padding-left:0;
-    height:24px;
+header h1 {
+  color: #ffffff;
 }
-nav li{
-    width: 46%;
-    float: left;
-    text-align: center;
-    margin: 0 2%;
+header nav {
+  background-image: -webkit-linear-gradient(#ffffff, #4d00e5);
+  background-image: -moz-linear-gradient(#ffffff, #4d00e5);
+  background-image: -ms-linear-gradient(#ffffff, #4d00e5);
+  background-image: -o-linear-gradient(#ffffff, #4d00e5);
+  background-image: linear-gradient(#ffffff, #4d00e5);
 }
-nav a{
-    background-color: #00ff90;
-    display: block;
-    padding-top:5px;
-    padding-bottom:5px;
-
+header nav ul {
+  height: 24px;
 }
-nav a:hover{
-    background-color:#099999;
-
+header nav ul li {
+  width: 160px;
+  float: left;
 }
-footer li{
-    width: 46%;
-
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px 0;
+  display: block;
 }
-h1{
-    padding:24px 10px;
-
-}
-div img{
-    width: 100%;
-
-}
-footer p{
-    padding: 10px;
-}
-
-a{
-    color: #999999;
-    text-decoration: none;
-
-}
-
-
-/* Class based styles */
-
-div.subsection{
-    width:96%;
-    margin: 24px 2%;
-    float: left;
-}
-
-
-/* ID based styles */
-
-/* Medium screens */
-    @media(min-width: 768px){
-    nav li{
-        width: 12.66%;
-    }
-    footer li{
-        width: 46%;
-    }
-}
-/* Large screen */
-    @media (min-width: 960px){
-    body{
-        max-width:960px;
-
-}
-    div.subsection{
-        width: 46%;
-    }
-}
-
-/* Style changes for larger displays or devices */

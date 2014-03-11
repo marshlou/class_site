@@ -1,0 +1,99 @@
+/**
+* Reset or normalise used to standardise browser display
+**/
+@import url('normalize.css');
+/* Mobile first */
+
+
+
+/* Redefine existing HTML styles */
+
+body{
+    font: smaller/160% sans-serif;
+    color: #999999;
+    margin: 0 auto;
+
+
+}
+header, footer{
+    clear: both;
+}
+
+nav ul {
+    list-style:none;
+    padding-right:0;
+    padding-left:0;
+    height:24px;
+}
+nav li{
+    width: 46%;
+    float: left;
+    text-align: center;
+    margin: 0 2%;
+}
+nav a{
+    background-color: #00ff90;
+    display: block;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+nav a:hover{
+    background-color:#099999;
+
+}
+footer li{
+    width: 46%;
+
+}
+h1{
+    padding:24px 10px;
+
+}
+div img{
+    width: 100%;
+
+}
+footer p{
+    padding: 10px;
+}
+
+a{
+    color: #999999;
+    text-decoration: none;
+
+}
+
+
+/* Class based styles */
+
+div.subsection{
+    width:96%;
+    margin: 24px 2%;
+    float: left;
+}
+
+
+/* ID based styles */
+
+/* Medium screens */
+    @media(min-width: 768px){
+    nav li{
+        width: 12.66%;
+    }
+    footer li{
+        width: 46%;
+    }
+}
+/* Large screen */
+    @media (min-width: 960px){
+    body{
+        max-width:960px;
+
+}
+    div.subsection{
+        width: 46%;
+    }
+}
+
+/* Style changes for larger displays or devices */

@@ -1,16 +1,17 @@
 @import 'reset.css';
-@import 'http//fonts.googleapis.com/css?family=Open+Sans:400,600,300';
+@import url('http//fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 /*variables and mixins */
+#page {
+  position: relative;
+  width: 100%;
+  left: auto;
+  right: auto;
+}
 body {
   font: 14px/1.5 'Open Sans', sans-serif;
   color: #366666;
   width: 100%;
   margin: 0 auto;
-}
-body img {
-  width: 100%;
-  max-width: 960px;
-  min-width: 290px;
 }
 h1,
 h2,
@@ -23,8 +24,8 @@ header {
 header h1 {
   font-size: 24px;
   padding: 20px;
-  background: #ffffff;
-  text0align: center;
+  background: #aed4d4;
+  text-align: center;
 }
 header nav li {
   width: 100%;
@@ -50,6 +51,11 @@ section p img {
 section.second p {
   margin: 24px 16px;
 }
+section.second p img {
+  -webkit-border-radius: 50%;
+  -moz-boarder-radius: 50%;
+  boarder-radius: 50%;
+}
 section.second p a {
   color: #5aa8a8;
   text-decoration: none;
@@ -71,21 +77,28 @@ footer li a {
   text-decoration: none;
 }
 @media (min-device-width: 481px) {
+  #page {
+    width: 750px;
+  }
   body {
     font-size: 16px;
     width: 750px;
   }
   header {
     clear: both;
+    height: 96px;
   }
   header h1 {
     width: 290px;
     float: left;
-    padding: 34px 20px;
+    padding: 58px 20px;
   }
   header nav {
     width: 420px;
     float: right;
+  }
+  header nav ul {
+    margin-top: 48px;
   }
   header nav li {
     width: 140px;
@@ -108,14 +121,28 @@ footer li a {
   section div {
     clear: both;
   }
+  footer nav ul + ul {
+    position: absolute;
+    top: 0px;
+    right: 70px;
+  }
+  footer nav ul + ul li {
+    width: 140px;
+  }
 }
-@media (min-device-width: 960px) {
+@media (min-device-width: 481px) and (min-device-width: 960px) {
+  #page {
+    width: 960px;
+  }
   body {
     width: 960px;
   }
+  header {
+    height: 64px;
+  }
   header h1 {
     width: 290px;
-    padding: 8px 20px;
+    padding: 32px 20px;
     text-align: left;
   }
   header nav {
@@ -126,5 +153,11 @@ footer li a {
   }
   section.second p + p {
     width: 606px;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer nav ul + ul {
+    right: 0;
   }
 }

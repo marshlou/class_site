@@ -1,18 +1,20 @@
 @import 'reset.css';
-@import 'http//fonts.googleapis.com/css?family=Open+Sans:400,600,300';
-/*variables and mixins */
-
+@import url('http//fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 @basecolor: #366666;
+/*variables and mixins */
+#page{
+  position: relative;
+  width: 100%;
+  left: auto;
+  right: auto;
+}
+
 body{
   font: 14px/1.5 'Open Sans', sans-serif;
   color: @basecolor;
   width: 100%;
   margin: 0 auto;
-  img{
-    width: 100%;
-    max-width: 960px;
-    min-width: 290px;
-  }
+
 }
 h1,h2,h3{
   font-weight:600;
@@ -22,8 +24,8 @@ header{
   h1{
     font-size: 24px;
     padding:20px;
-    background: lighten(@basecolor, 100%);
-    text0align: center;
+    background: lighten(@basecolor, 45%);
+    text-align: center;
   }
   nav{
 li{
@@ -51,15 +53,28 @@ p img{
 }
   &.second p{
     margin: 24px 16px;
-    a{
+    img{
+        -webkit-border-radius: 50%;
+        -moz-boarder-radius: 50%;
+        boarder-radius: 50%;
+    }
+
+        a{
       color:lighten(@basecolor, 20%);
       text-decoration: none;
       font-weight:600;
+    }
+
+
+
+
+      }
 
     }
-}
 
-}
+
+
+
 footer{
   clear: both;
   li{
@@ -76,20 +91,30 @@ footer{
   }
 }
 @media(min-device-width:481px){
+  #page{
+    width:750px;
+
+
+  }
   body{
+
     font-size:16px;
     width:750px;
   }
   header{
     clear: both;
+    height: 96px;
     h1{
       width:290px;
       float: left;
-      padding: 34px 20px;
+      padding: 58px 20px;
     }
     nav{
       width: 420px;
       float: right;
+      ul{
+        margin-top: 48px;
+      }
       li{
         width: 140px;
         float: left;
@@ -115,22 +140,43 @@ div{
 clear: both;
 }
 }
-}
+  footer{
+    nav{
+      ul+ul{
+        position: absolute;
+        top:0px;
+        right: 70px;
+
+
+      }
+      ul+ul li{
+        width: 140px;
+
+      }
+    }
+  }
+
+
 @media(min-device-width:960px){
-  body{
+  #page{
     width: 960px;
+  }
+  body{
+    width:960px;
+
 
   }
   header{
+    height: 64px;
     h1{
       width:290px;
-      padding: 8px 20px;
+      padding: 32px 20px;
       text-align: left;
 
     }
     nav{
       width:630px;
-      li{
+       li{
         width: 105px;
 
       }
@@ -139,11 +185,23 @@ clear: both;
   section{
     &.second p+p{
       width:606px;
-
     }
   }
-}
+    footer{
+      p{
+        text-align: center;
+      }
+      nav{
+        ul+ul{
+          right: 0;
+        }
+      }
 
+    }
+
+
+}
+}
 
 
 

@@ -8,10 +8,15 @@
   right: auto;
 }
 body {
+
   font: 14px/1.5 'Open Sans', sans-serif;
   color: #366666;
   width: 100%;
   margin: 0 auto;
+  background-image: url(../images/pattern4.gif);
+    background-color:#9dcbcb;
+
+
 }
 h1,
 h2,

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta charset="UTF-8"/>
     <title>Welcome to Arrow Photography</title>
-    <meta name="viewport" content="width: device-width;initial-scale=1"/>
-    <link href="assets/css/styles.css" rel="stylesheet"/>
+    <script src="assets/js/min/modernizr.custom.11774.js"></script>
+    <link href="assets/css/styles.css" rel="stylesheet" media="all"/>
 
 
 
@@ -28,9 +28,12 @@
     </header>
     <div id="content">
         <section class="first">
-            <p>
+            <p class="slideshow" data-cycle-fx="slideHorz">
 
                 <img src="assets/images/ArrowPhotograhyFrontPage1.jpg" alt="Wedding Photography"/>
+                <img src="assets/images/ArrowPhotograhyFrontPage3.jpg" alt="Wedding Photography"/>
+                <img src="assets/images/ArrowPhotograhyFrontPage4.jpg" alt="Wedding Photography"/>
+                <img src="assets/images/ArrowPhotograhyFrontPage5.jpg" alt="Wedding Photography"/>
                 </p>
 
             <h2>Welcome to Arrow Photography</h2>
@@ -110,6 +113,15 @@
 
     </footer>
 </div>
+<script src="assets/js/min/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery.cycle2.min.js"></script>
+<script src="assets/js/min/jquery.cycle2.flip.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".slideshow").cycle();
+    })
+</script>
+
 </body>
 </html>
 

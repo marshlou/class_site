@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>Example Plugin</title>
+    <script src="assets/js/min/modernizr.custom.11774.js"></script>
+    <link href="assets/css/styles.css" rel="stylesheet" media="all" />
+
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" media="screen" />
+    <style>
+        .gallery img{
+            width: auto;
+            height: 100px;
+        }
+        .gallery a {
+
+            cursor: -webkit-zoom-in !important;
+            cursor: -moz-zoom-in !important;
+            cursor: zoom-in !important;
+
+
+        }
+    </style>
+
+    <div id="content" class="container">
+        <section class="slider">
+
+        </section>
+        <section class="first">
+            <h2>Magnific-popup</h2>
+
+            <p class="gallery">
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg" rel="prettyPhoto[top]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding7.jpg" rel="prettyPhoto[top]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding7.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg" rel="prettyPhoto[top]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding6.jpg" rel="prettyPhoto[top]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding6.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg" rel="prettyPhoto[top]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding5.jpg" rel="prettyPhoto[bottom]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding5.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding8.jpg" rel="prettyPhoto[bottom]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding8.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding9.jpg" rel="prettyPhoto[bottom]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding9.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding10.jpg" rel="prettyPhoto[bottom]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding10.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding11.jpg" rel="prettyPhoto[bottom]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding11.jpg" alt="Adele and John's Wedding" /></a>
+                <a href="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding12.jpg" rel="prettyPhoto[bottom]"><img src="portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding12.jpg" alt="Adele and John's Wedding" /></a>
+            </p>
+        </section>
+    </div>
+
+</div>
+<script src="assets/js/min/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('a[rel^="prettyPhoto"]').magnificPopup({type:'image'});
+    })
+</script>
+</body>
+</html>
